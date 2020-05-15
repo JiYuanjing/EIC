@@ -50,13 +50,13 @@ void calXsection()
   
   //start Xsection
   //reduced cross section vs x
-  // drawX(TFile* f ,TPDF* pdf, double Lumi, double QL1=0.575,double QH1=0.675 ,double QL2=2.075,double QH2=2.175, int mode = 1);
   // QL QH refer to the selected Q2 range is (pow(QL,10), pow(QH,10))
   // the center value of the Q2 is (pow(QL,10), pow(QH,10))/2.
   // expLumiscale:scale the error bar to the expected lumilosity, if expLumiscale=-1, then do not scale 
   drawX(f,pdf,fout,Lumi,  0.575,0.675 ,2.075,2.175, s, 1, expLumiscale);
   drawX(f,pdf,fout,Lumi,  0.575,0.675 ,2.075,2.175, s, 2, expLumiscale);
  
+  //reduced cross section vs Q2, in different x
   drawXsection(f, pdf,  "hXsection", fout,  Lumi, s, 1., expLumiscale);
   drawXsection(f, pdf,  "hCharmXsection",fout, Lumi,s, 10., expLumiscale);
   //
