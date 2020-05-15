@@ -322,13 +322,17 @@ void fillXsection(double Q2,double x,double y, bool haveCharm)
 {
   double factor = Q2*Q2*x*0.5/3.1415*137.036*137.036/(1+(1-y)*(1-y));
   // double factor = 1;
-  if ( fabs(TMath::Log10(Q2)-0.625)<0.05) 
+  double QL1 = 0.575, QH1 = 0.675;
+  double QL2 = 2.075, QH2 = 2.175;
+  // if ( fabs(TMath::Log10(Q2)-0.625)<0.05) 
+  if ( TMath::Log10(Q2)<QH1 && TMath::Log10(Q2)>QL1) 
   {  
     hSigmaX1->Fill(TMath::Log10(x),factor); 
     if (haveCharm) 
        hCharmSigmaX1->Fill(TMath::Log10(x),factor); 
   }
-  if (fabs(TMath::Log10(Q2)-2.125)<0.05)
+  // if (fabs(TMath::Log10(Q2)-2.125)<0.05)
+  if (TMath::Log10(Q2)<QH2 && TMath::Log10(Q2)>QL2)
   {
     hSigmaX2->Fill(TMath::Log10(x),factor); 
     if (haveCharm) 
