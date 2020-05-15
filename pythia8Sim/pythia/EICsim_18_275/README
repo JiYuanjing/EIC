@@ -1,5 +1,0 @@
-1, how to run and submit jobs
-./runJpsi.sh (num of jobs) (start num of cards)
-2, before run
-pmainJpsi.cpp is the main function, after each time modify this file, do:
-make
