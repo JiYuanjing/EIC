@@ -3,6 +3,7 @@
 ! *.cpp
 ! *.cxx
 ! *.cc
+! *.h
 ! MakeFile
 ! *.sh
 ! *.cmnd
