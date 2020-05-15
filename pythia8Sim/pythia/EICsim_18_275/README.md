@@ -1,6 +1,6 @@
 # EIC simulation with pythia 8
-
-# how to run the file
+Code Author: Yuanjing Ji
+## how to run the file
 The default environment is sPHENIX, but it can be submitted to the STAR node too at RCF after set up the environment in the shell.
 
 ## 1, how to run and submit jobs
