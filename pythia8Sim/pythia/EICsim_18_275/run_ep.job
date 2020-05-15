@@ -1,0 +1,1409 @@
+Universe        = vanilla
+Notification    = never
+Rank            = CPU_Speed 
+Priority        = +10
+GetEnv          = True
+Initialdir      = /sphenix/user/jiyj/EIC/EICsim 
+Input           = /dev/null
+GetEnv          = True
+
+Executable       = run.sh
+Arguments        = cards/EP_0 out/EP_0 10
+Output           = log/EP_0.out
+Error            = log/EP_0.err
+Log              = log/EP_0
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_1 out/EP_1 10
+Output           = log/EP_1.out
+Error            = log/EP_1.err
+Log              = log/EP_1
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_2 out/EP_2 10
+Output           = log/EP_2.out
+Error            = log/EP_2.err
+Log              = log/EP_2
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_3 out/EP_3 10
+Output           = log/EP_3.out
+Error            = log/EP_3.err
+Log              = log/EP_3
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_4 out/EP_4 10
+Output           = log/EP_4.out
+Error            = log/EP_4.err
+Log              = log/EP_4
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_5 out/EP_5 10
+Output           = log/EP_5.out
+Error            = log/EP_5.err
+Log              = log/EP_5
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_6 out/EP_6 10
+Output           = log/EP_6.out
+Error            = log/EP_6.err
+Log              = log/EP_6
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_7 out/EP_7 10
+Output           = log/EP_7.out
+Error            = log/EP_7.err
+Log              = log/EP_7
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_8 out/EP_8 10
+Output           = log/EP_8.out
+Error            = log/EP_8.err
+Log              = log/EP_8
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_9 out/EP_9 10
+Output           = log/EP_9.out
+Error            = log/EP_9.err
+Log              = log/EP_9
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_10 out/EP_10 10
+Output           = log/EP_10.out
+Error            = log/EP_10.err
+Log              = log/EP_10
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_11 out/EP_11 10
+Output           = log/EP_11.out
+Error            = log/EP_11.err
+Log              = log/EP_11
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_12 out/EP_12 10
+Output           = log/EP_12.out
+Error            = log/EP_12.err
+Log              = log/EP_12
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_13 out/EP_13 10
+Output           = log/EP_13.out
+Error            = log/EP_13.err
+Log              = log/EP_13
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_14 out/EP_14 10
+Output           = log/EP_14.out
+Error            = log/EP_14.err
+Log              = log/EP_14
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_15 out/EP_15 10
+Output           = log/EP_15.out
+Error            = log/EP_15.err
+Log              = log/EP_15
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_16 out/EP_16 10
+Output           = log/EP_16.out
+Error            = log/EP_16.err
+Log              = log/EP_16
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_17 out/EP_17 10
+Output           = log/EP_17.out
+Error            = log/EP_17.err
+Log              = log/EP_17
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_18 out/EP_18 10
+Output           = log/EP_18.out
+Error            = log/EP_18.err
+Log              = log/EP_18
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_19 out/EP_19 10
+Output           = log/EP_19.out
+Error            = log/EP_19.err
+Log              = log/EP_19
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_20 out/EP_20 10
+Output           = log/EP_20.out
+Error            = log/EP_20.err
+Log              = log/EP_20
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_21 out/EP_21 10
+Output           = log/EP_21.out
+Error            = log/EP_21.err
+Log              = log/EP_21
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_22 out/EP_22 10
+Output           = log/EP_22.out
+Error            = log/EP_22.err
+Log              = log/EP_22
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_23 out/EP_23 10
+Output           = log/EP_23.out
+Error            = log/EP_23.err
+Log              = log/EP_23
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_24 out/EP_24 10
+Output           = log/EP_24.out
+Error            = log/EP_24.err
+Log              = log/EP_24
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_25 out/EP_25 10
+Output           = log/EP_25.out
+Error            = log/EP_25.err
+Log              = log/EP_25
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_26 out/EP_26 10
+Output           = log/EP_26.out
+Error            = log/EP_26.err
+Log              = log/EP_26
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_27 out/EP_27 10
+Output           = log/EP_27.out
+Error            = log/EP_27.err
+Log              = log/EP_27
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_28 out/EP_28 10
+Output           = log/EP_28.out
+Error            = log/EP_28.err
+Log              = log/EP_28
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_29 out/EP_29 10
+Output           = log/EP_29.out
+Error            = log/EP_29.err
+Log              = log/EP_29
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_30 out/EP_30 10
+Output           = log/EP_30.out
+Error            = log/EP_30.err
+Log              = log/EP_30
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_31 out/EP_31 10
+Output           = log/EP_31.out
+Error            = log/EP_31.err
+Log              = log/EP_31
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_32 out/EP_32 10
+Output           = log/EP_32.out
+Error            = log/EP_32.err
+Log              = log/EP_32
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_33 out/EP_33 10
+Output           = log/EP_33.out
+Error            = log/EP_33.err
+Log              = log/EP_33
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_34 out/EP_34 10
+Output           = log/EP_34.out
+Error            = log/EP_34.err
+Log              = log/EP_34
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_35 out/EP_35 10
+Output           = log/EP_35.out
+Error            = log/EP_35.err
+Log              = log/EP_35
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_36 out/EP_36 10
+Output           = log/EP_36.out
+Error            = log/EP_36.err
+Log              = log/EP_36
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_37 out/EP_37 10
+Output           = log/EP_37.out
+Error            = log/EP_37.err
+Log              = log/EP_37
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_38 out/EP_38 10
+Output           = log/EP_38.out
+Error            = log/EP_38.err
+Log              = log/EP_38
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_39 out/EP_39 10
+Output           = log/EP_39.out
+Error            = log/EP_39.err
+Log              = log/EP_39
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_40 out/EP_40 10
+Output           = log/EP_40.out
+Error            = log/EP_40.err
+Log              = log/EP_40
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_41 out/EP_41 10
+Output           = log/EP_41.out
+Error            = log/EP_41.err
+Log              = log/EP_41
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_42 out/EP_42 10
+Output           = log/EP_42.out
+Error            = log/EP_42.err
+Log              = log/EP_42
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_43 out/EP_43 10
+Output           = log/EP_43.out
+Error            = log/EP_43.err
+Log              = log/EP_43
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_44 out/EP_44 10
+Output           = log/EP_44.out
+Error            = log/EP_44.err
+Log              = log/EP_44
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_45 out/EP_45 10
+Output           = log/EP_45.out
+Error            = log/EP_45.err
+Log              = log/EP_45
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_46 out/EP_46 10
+Output           = log/EP_46.out
+Error            = log/EP_46.err
+Log              = log/EP_46
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_47 out/EP_47 10
+Output           = log/EP_47.out
+Error            = log/EP_47.err
+Log              = log/EP_47
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_48 out/EP_48 10
+Output           = log/EP_48.out
+Error            = log/EP_48.err
+Log              = log/EP_48
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_49 out/EP_49 10
+Output           = log/EP_49.out
+Error            = log/EP_49.err
+Log              = log/EP_49
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_50 out/EP_50 10
+Output           = log/EP_50.out
+Error            = log/EP_50.err
+Log              = log/EP_50
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_51 out/EP_51 10
+Output           = log/EP_51.out
+Error            = log/EP_51.err
+Log              = log/EP_51
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_52 out/EP_52 10
+Output           = log/EP_52.out
+Error            = log/EP_52.err
+Log              = log/EP_52
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_53 out/EP_53 10
+Output           = log/EP_53.out
+Error            = log/EP_53.err
+Log              = log/EP_53
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_54 out/EP_54 10
+Output           = log/EP_54.out
+Error            = log/EP_54.err
+Log              = log/EP_54
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_55 out/EP_55 10
+Output           = log/EP_55.out
+Error            = log/EP_55.err
+Log              = log/EP_55
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_56 out/EP_56 10
+Output           = log/EP_56.out
+Error            = log/EP_56.err
+Log              = log/EP_56
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_57 out/EP_57 10
+Output           = log/EP_57.out
+Error            = log/EP_57.err
+Log              = log/EP_57
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_58 out/EP_58 10
+Output           = log/EP_58.out
+Error            = log/EP_58.err
+Log              = log/EP_58
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_59 out/EP_59 10
+Output           = log/EP_59.out
+Error            = log/EP_59.err
+Log              = log/EP_59
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_60 out/EP_60 10
+Output           = log/EP_60.out
+Error            = log/EP_60.err
+Log              = log/EP_60
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_61 out/EP_61 10
+Output           = log/EP_61.out
+Error            = log/EP_61.err
+Log              = log/EP_61
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_62 out/EP_62 10
+Output           = log/EP_62.out
+Error            = log/EP_62.err
+Log              = log/EP_62
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_63 out/EP_63 10
+Output           = log/EP_63.out
+Error            = log/EP_63.err
+Log              = log/EP_63
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_64 out/EP_64 10
+Output           = log/EP_64.out
+Error            = log/EP_64.err
+Log              = log/EP_64
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_65 out/EP_65 10
+Output           = log/EP_65.out
+Error            = log/EP_65.err
+Log              = log/EP_65
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_66 out/EP_66 10
+Output           = log/EP_66.out
+Error            = log/EP_66.err
+Log              = log/EP_66
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_67 out/EP_67 10
+Output           = log/EP_67.out
+Error            = log/EP_67.err
+Log              = log/EP_67
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_68 out/EP_68 10
+Output           = log/EP_68.out
+Error            = log/EP_68.err
+Log              = log/EP_68
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_69 out/EP_69 10
+Output           = log/EP_69.out
+Error            = log/EP_69.err
+Log              = log/EP_69
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_70 out/EP_70 10
+Output           = log/EP_70.out
+Error            = log/EP_70.err
+Log              = log/EP_70
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_71 out/EP_71 10
+Output           = log/EP_71.out
+Error            = log/EP_71.err
+Log              = log/EP_71
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_72 out/EP_72 10
+Output           = log/EP_72.out
+Error            = log/EP_72.err
+Log              = log/EP_72
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_73 out/EP_73 10
+Output           = log/EP_73.out
+Error            = log/EP_73.err
+Log              = log/EP_73
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_74 out/EP_74 10
+Output           = log/EP_74.out
+Error            = log/EP_74.err
+Log              = log/EP_74
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_75 out/EP_75 10
+Output           = log/EP_75.out
+Error            = log/EP_75.err
+Log              = log/EP_75
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_76 out/EP_76 10
+Output           = log/EP_76.out
+Error            = log/EP_76.err
+Log              = log/EP_76
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_77 out/EP_77 10
+Output           = log/EP_77.out
+Error            = log/EP_77.err
+Log              = log/EP_77
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_78 out/EP_78 10
+Output           = log/EP_78.out
+Error            = log/EP_78.err
+Log              = log/EP_78
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_79 out/EP_79 10
+Output           = log/EP_79.out
+Error            = log/EP_79.err
+Log              = log/EP_79
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_80 out/EP_80 10
+Output           = log/EP_80.out
+Error            = log/EP_80.err
+Log              = log/EP_80
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_81 out/EP_81 10
+Output           = log/EP_81.out
+Error            = log/EP_81.err
+Log              = log/EP_81
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_82 out/EP_82 10
+Output           = log/EP_82.out
+Error            = log/EP_82.err
+Log              = log/EP_82
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_83 out/EP_83 10
+Output           = log/EP_83.out
+Error            = log/EP_83.err
+Log              = log/EP_83
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_84 out/EP_84 10
+Output           = log/EP_84.out
+Error            = log/EP_84.err
+Log              = log/EP_84
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_85 out/EP_85 10
+Output           = log/EP_85.out
+Error            = log/EP_85.err
+Log              = log/EP_85
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_86 out/EP_86 10
+Output           = log/EP_86.out
+Error            = log/EP_86.err
+Log              = log/EP_86
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_87 out/EP_87 10
+Output           = log/EP_87.out
+Error            = log/EP_87.err
+Log              = log/EP_87
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_88 out/EP_88 10
+Output           = log/EP_88.out
+Error            = log/EP_88.err
+Log              = log/EP_88
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_89 out/EP_89 10
+Output           = log/EP_89.out
+Error            = log/EP_89.err
+Log              = log/EP_89
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_90 out/EP_90 10
+Output           = log/EP_90.out
+Error            = log/EP_90.err
+Log              = log/EP_90
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_91 out/EP_91 10
+Output           = log/EP_91.out
+Error            = log/EP_91.err
+Log              = log/EP_91
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_92 out/EP_92 10
+Output           = log/EP_92.out
+Error            = log/EP_92.err
+Log              = log/EP_92
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_93 out/EP_93 10
+Output           = log/EP_93.out
+Error            = log/EP_93.err
+Log              = log/EP_93
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_94 out/EP_94 10
+Output           = log/EP_94.out
+Error            = log/EP_94.err
+Log              = log/EP_94
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_95 out/EP_95 10
+Output           = log/EP_95.out
+Error            = log/EP_95.err
+Log              = log/EP_95
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_96 out/EP_96 10
+Output           = log/EP_96.out
+Error            = log/EP_96.err
+Log              = log/EP_96
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_97 out/EP_97 10
+Output           = log/EP_97.out
+Error            = log/EP_97.err
+Log              = log/EP_97
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_98 out/EP_98 10
+Output           = log/EP_98.out
+Error            = log/EP_98.err
+Log              = log/EP_98
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_99 out/EP_99 10
+Output           = log/EP_99.out
+Error            = log/EP_99.err
+Log              = log/EP_99
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_100 out/EP_100 10
+Output           = log/EP_100.out
+Error            = log/EP_100.err
+Log              = log/EP_100
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_101 out/EP_101 10
+Output           = log/EP_101.out
+Error            = log/EP_101.err
+Log              = log/EP_101
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_102 out/EP_102 10
+Output           = log/EP_102.out
+Error            = log/EP_102.err
+Log              = log/EP_102
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_103 out/EP_103 10
+Output           = log/EP_103.out
+Error            = log/EP_103.err
+Log              = log/EP_103
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_104 out/EP_104 10
+Output           = log/EP_104.out
+Error            = log/EP_104.err
+Log              = log/EP_104
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_105 out/EP_105 10
+Output           = log/EP_105.out
+Error            = log/EP_105.err
+Log              = log/EP_105
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_106 out/EP_106 10
+Output           = log/EP_106.out
+Error            = log/EP_106.err
+Log              = log/EP_106
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_107 out/EP_107 10
+Output           = log/EP_107.out
+Error            = log/EP_107.err
+Log              = log/EP_107
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_108 out/EP_108 10
+Output           = log/EP_108.out
+Error            = log/EP_108.err
+Log              = log/EP_108
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_109 out/EP_109 10
+Output           = log/EP_109.out
+Error            = log/EP_109.err
+Log              = log/EP_109
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_110 out/EP_110 10
+Output           = log/EP_110.out
+Error            = log/EP_110.err
+Log              = log/EP_110
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_111 out/EP_111 10
+Output           = log/EP_111.out
+Error            = log/EP_111.err
+Log              = log/EP_111
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_112 out/EP_112 10
+Output           = log/EP_112.out
+Error            = log/EP_112.err
+Log              = log/EP_112
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_113 out/EP_113 10
+Output           = log/EP_113.out
+Error            = log/EP_113.err
+Log              = log/EP_113
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_114 out/EP_114 10
+Output           = log/EP_114.out
+Error            = log/EP_114.err
+Log              = log/EP_114
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_115 out/EP_115 10
+Output           = log/EP_115.out
+Error            = log/EP_115.err
+Log              = log/EP_115
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_116 out/EP_116 10
+Output           = log/EP_116.out
+Error            = log/EP_116.err
+Log              = log/EP_116
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_117 out/EP_117 10
+Output           = log/EP_117.out
+Error            = log/EP_117.err
+Log              = log/EP_117
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_118 out/EP_118 10
+Output           = log/EP_118.out
+Error            = log/EP_118.err
+Log              = log/EP_118
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_119 out/EP_119 10
+Output           = log/EP_119.out
+Error            = log/EP_119.err
+Log              = log/EP_119
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_120 out/EP_120 10
+Output           = log/EP_120.out
+Error            = log/EP_120.err
+Log              = log/EP_120
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_121 out/EP_121 10
+Output           = log/EP_121.out
+Error            = log/EP_121.err
+Log              = log/EP_121
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_122 out/EP_122 10
+Output           = log/EP_122.out
+Error            = log/EP_122.err
+Log              = log/EP_122
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_123 out/EP_123 10
+Output           = log/EP_123.out
+Error            = log/EP_123.err
+Log              = log/EP_123
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_124 out/EP_124 10
+Output           = log/EP_124.out
+Error            = log/EP_124.err
+Log              = log/EP_124
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_125 out/EP_125 10
+Output           = log/EP_125.out
+Error            = log/EP_125.err
+Log              = log/EP_125
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_126 out/EP_126 10
+Output           = log/EP_126.out
+Error            = log/EP_126.err
+Log              = log/EP_126
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_127 out/EP_127 10
+Output           = log/EP_127.out
+Error            = log/EP_127.err
+Log              = log/EP_127
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_128 out/EP_128 10
+Output           = log/EP_128.out
+Error            = log/EP_128.err
+Log              = log/EP_128
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_129 out/EP_129 10
+Output           = log/EP_129.out
+Error            = log/EP_129.err
+Log              = log/EP_129
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_130 out/EP_130 10
+Output           = log/EP_130.out
+Error            = log/EP_130.err
+Log              = log/EP_130
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_131 out/EP_131 10
+Output           = log/EP_131.out
+Error            = log/EP_131.err
+Log              = log/EP_131
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_132 out/EP_132 10
+Output           = log/EP_132.out
+Error            = log/EP_132.err
+Log              = log/EP_132
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_133 out/EP_133 10
+Output           = log/EP_133.out
+Error            = log/EP_133.err
+Log              = log/EP_133
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_134 out/EP_134 10
+Output           = log/EP_134.out
+Error            = log/EP_134.err
+Log              = log/EP_134
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_135 out/EP_135 10
+Output           = log/EP_135.out
+Error            = log/EP_135.err
+Log              = log/EP_135
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_136 out/EP_136 10
+Output           = log/EP_136.out
+Error            = log/EP_136.err
+Log              = log/EP_136
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_137 out/EP_137 10
+Output           = log/EP_137.out
+Error            = log/EP_137.err
+Log              = log/EP_137
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_138 out/EP_138 10
+Output           = log/EP_138.out
+Error            = log/EP_138.err
+Log              = log/EP_138
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_139 out/EP_139 10
+Output           = log/EP_139.out
+Error            = log/EP_139.err
+Log              = log/EP_139
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_140 out/EP_140 10
+Output           = log/EP_140.out
+Error            = log/EP_140.err
+Log              = log/EP_140
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_141 out/EP_141 10
+Output           = log/EP_141.out
+Error            = log/EP_141.err
+Log              = log/EP_141
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_142 out/EP_142 10
+Output           = log/EP_142.out
+Error            = log/EP_142.err
+Log              = log/EP_142
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_143 out/EP_143 10
+Output           = log/EP_143.out
+Error            = log/EP_143.err
+Log              = log/EP_143
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_144 out/EP_144 10
+Output           = log/EP_144.out
+Error            = log/EP_144.err
+Log              = log/EP_144
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_145 out/EP_145 10
+Output           = log/EP_145.out
+Error            = log/EP_145.err
+Log              = log/EP_145
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_146 out/EP_146 10
+Output           = log/EP_146.out
+Error            = log/EP_146.err
+Log              = log/EP_146
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_147 out/EP_147 10
+Output           = log/EP_147.out
+Error            = log/EP_147.err
+Log              = log/EP_147
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_148 out/EP_148 10
+Output           = log/EP_148.out
+Error            = log/EP_148.err
+Log              = log/EP_148
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_149 out/EP_149 10
+Output           = log/EP_149.out
+Error            = log/EP_149.err
+Log              = log/EP_149
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_150 out/EP_150 10
+Output           = log/EP_150.out
+Error            = log/EP_150.err
+Log              = log/EP_150
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_151 out/EP_151 10
+Output           = log/EP_151.out
+Error            = log/EP_151.err
+Log              = log/EP_151
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_152 out/EP_152 10
+Output           = log/EP_152.out
+Error            = log/EP_152.err
+Log              = log/EP_152
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_153 out/EP_153 10
+Output           = log/EP_153.out
+Error            = log/EP_153.err
+Log              = log/EP_153
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_154 out/EP_154 10
+Output           = log/EP_154.out
+Error            = log/EP_154.err
+Log              = log/EP_154
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_155 out/EP_155 10
+Output           = log/EP_155.out
+Error            = log/EP_155.err
+Log              = log/EP_155
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_156 out/EP_156 10
+Output           = log/EP_156.out
+Error            = log/EP_156.err
+Log              = log/EP_156
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_157 out/EP_157 10
+Output           = log/EP_157.out
+Error            = log/EP_157.err
+Log              = log/EP_157
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_158 out/EP_158 10
+Output           = log/EP_158.out
+Error            = log/EP_158.err
+Log              = log/EP_158
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_159 out/EP_159 10
+Output           = log/EP_159.out
+Error            = log/EP_159.err
+Log              = log/EP_159
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_160 out/EP_160 10
+Output           = log/EP_160.out
+Error            = log/EP_160.err
+Log              = log/EP_160
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_161 out/EP_161 10
+Output           = log/EP_161.out
+Error            = log/EP_161.err
+Log              = log/EP_161
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_162 out/EP_162 10
+Output           = log/EP_162.out
+Error            = log/EP_162.err
+Log              = log/EP_162
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_163 out/EP_163 10
+Output           = log/EP_163.out
+Error            = log/EP_163.err
+Log              = log/EP_163
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_164 out/EP_164 10
+Output           = log/EP_164.out
+Error            = log/EP_164.err
+Log              = log/EP_164
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_165 out/EP_165 10
+Output           = log/EP_165.out
+Error            = log/EP_165.err
+Log              = log/EP_165
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_166 out/EP_166 10
+Output           = log/EP_166.out
+Error            = log/EP_166.err
+Log              = log/EP_166
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_167 out/EP_167 10
+Output           = log/EP_167.out
+Error            = log/EP_167.err
+Log              = log/EP_167
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_168 out/EP_168 10
+Output           = log/EP_168.out
+Error            = log/EP_168.err
+Log              = log/EP_168
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_169 out/EP_169 10
+Output           = log/EP_169.out
+Error            = log/EP_169.err
+Log              = log/EP_169
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_170 out/EP_170 10
+Output           = log/EP_170.out
+Error            = log/EP_170.err
+Log              = log/EP_170
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_171 out/EP_171 10
+Output           = log/EP_171.out
+Error            = log/EP_171.err
+Log              = log/EP_171
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_172 out/EP_172 10
+Output           = log/EP_172.out
+Error            = log/EP_172.err
+Log              = log/EP_172
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_173 out/EP_173 10
+Output           = log/EP_173.out
+Error            = log/EP_173.err
+Log              = log/EP_173
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_174 out/EP_174 10
+Output           = log/EP_174.out
+Error            = log/EP_174.err
+Log              = log/EP_174
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_175 out/EP_175 10
+Output           = log/EP_175.out
+Error            = log/EP_175.err
+Log              = log/EP_175
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_176 out/EP_176 10
+Output           = log/EP_176.out
+Error            = log/EP_176.err
+Log              = log/EP_176
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_177 out/EP_177 10
+Output           = log/EP_177.out
+Error            = log/EP_177.err
+Log              = log/EP_177
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_178 out/EP_178 10
+Output           = log/EP_178.out
+Error            = log/EP_178.err
+Log              = log/EP_178
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_179 out/EP_179 10
+Output           = log/EP_179.out
+Error            = log/EP_179.err
+Log              = log/EP_179
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_180 out/EP_180 10
+Output           = log/EP_180.out
+Error            = log/EP_180.err
+Log              = log/EP_180
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_181 out/EP_181 10
+Output           = log/EP_181.out
+Error            = log/EP_181.err
+Log              = log/EP_181
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_182 out/EP_182 10
+Output           = log/EP_182.out
+Error            = log/EP_182.err
+Log              = log/EP_182
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_183 out/EP_183 10
+Output           = log/EP_183.out
+Error            = log/EP_183.err
+Log              = log/EP_183
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_184 out/EP_184 10
+Output           = log/EP_184.out
+Error            = log/EP_184.err
+Log              = log/EP_184
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_185 out/EP_185 10
+Output           = log/EP_185.out
+Error            = log/EP_185.err
+Log              = log/EP_185
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_186 out/EP_186 10
+Output           = log/EP_186.out
+Error            = log/EP_186.err
+Log              = log/EP_186
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_187 out/EP_187 10
+Output           = log/EP_187.out
+Error            = log/EP_187.err
+Log              = log/EP_187
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_188 out/EP_188 10
+Output           = log/EP_188.out
+Error            = log/EP_188.err
+Log              = log/EP_188
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_189 out/EP_189 10
+Output           = log/EP_189.out
+Error            = log/EP_189.err
+Log              = log/EP_189
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_190 out/EP_190 10
+Output           = log/EP_190.out
+Error            = log/EP_190.err
+Log              = log/EP_190
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_191 out/EP_191 10
+Output           = log/EP_191.out
+Error            = log/EP_191.err
+Log              = log/EP_191
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_192 out/EP_192 10
+Output           = log/EP_192.out
+Error            = log/EP_192.err
+Log              = log/EP_192
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_193 out/EP_193 10
+Output           = log/EP_193.out
+Error            = log/EP_193.err
+Log              = log/EP_193
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_194 out/EP_194 10
+Output           = log/EP_194.out
+Error            = log/EP_194.err
+Log              = log/EP_194
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_195 out/EP_195 10
+Output           = log/EP_195.out
+Error            = log/EP_195.err
+Log              = log/EP_195
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_196 out/EP_196 10
+Output           = log/EP_196.out
+Error            = log/EP_196.err
+Log              = log/EP_196
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_197 out/EP_197 10
+Output           = log/EP_197.out
+Error            = log/EP_197.err
+Log              = log/EP_197
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_198 out/EP_198 10
+Output           = log/EP_198.out
+Error            = log/EP_198.err
+Log              = log/EP_198
+Queue 
+     
+Executable       = run.sh
+Arguments        = cards/EP_199 out/EP_199 10
+Output           = log/EP_199.out
+Error            = log/EP_199.err
+Log              = log/EP_199
+Queue 
+     

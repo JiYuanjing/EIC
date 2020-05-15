@@ -1,0 +1,94 @@
+# Main:numberOfEvents = 5000000  ! number of events to generate
+Main:numberOfEvents = 100000     ! number of events to generate
+Main:timesAllowErrors = 5000     ! abort run after this many flawed events
+Init:showChangedSettings = on    ! print changed flags/modes/parameters
+# Init:showAllSettings = on      ! print all flags/modes/parameters
+# Next:numberShowInfo = 10       ! The number of events to list the Info information for, where relevant
+
+#------------------------------------------------------------------------------
+# Colliding beams and center-of-mass energy
+# Documentation: <pyhiadir>/htmldoc/BeamParameters.html
+#------------------------------------------------------------------------------
+Beams:idA = 2212                 ! proton
+Beams:idB = 11                   ! electron 
+Beams:eA = 275.                  !  (GeV)
+Beams:eB = 18.                   !  (GeV)
+# Beams:eB = 5.                  !  (GeV)
+Beams:frameType=2
+Tune:preferLHAPDF = 2
+Tune:pp=14 #default one
+# PDF:pSet=LHAPDF6:EPPS16nlo_CT14nlo_Au197
+# PDF:useHard=on
+# PDF:pHardSet=LHAPDF6:EPPS16nlo_CT14nlo_Au197
+# PDF:useHardNPDFA=on
+# PDF:nPDFSetA=3
+# PDF:nPDFBeamA=100791970
+
+MultipartonInteractions:pT0Ref=3
+PDF:lepton=off
+PhaseSpace:mHatMin=0.
+# PhaseSpace:mHatMin=0.
+PhaseSpace:pTHatMinDiverge=0.5
+SpaceShower:dipoleRecoil=on
+SpaceShower:pTmaxMatch=2
+TimeShower:QEDshowerByL = off
+
+PhotonCollision:all=on
+PhotonParton:all=on
+PromptPhoton:all=on
+WeakBosonExchange:all=on
+WeakSingleBoson:all=on
+WeakDoubleBoson:all=on
+#should not open the following 
+HardQCD:all=on
+# # SoftQCD:elastic=on
+# # SoftQCD:nonDiffractive=on
+# # Diffraction
+Diffraction:doHard=on
+Charmonium:all=on
+Bottomonium:all=on
+# PhaseSpace:pTHatMin = 1
+# PhaseSpace:pTHatMax = 2
+
+#------------------------------------------------------------------------------
+# Random Number
+# Initialize random generator according to time. Otherwise multiple jobs
+# will produce the same sequence (unless you pass a different seed every
+# time which is not practical).
+# Documentation: <pythiadir>/htmldoc/RandomNumberSeed.html
+#------------------------------------------------------------------------------
+Random:setSeed = on
+Random:seed = 0
+
+PDF:extrapolate = on
+
+#---------------------------------------------------------------------------
+PartonLevel:all = on
+# PartonLevel:MPI = on              ! multiple interactions
+# PartonLevel:ISR = on             ! initial-state radiation 
+# BeamRemnants:primordialKT = on    ! primordial kt
+# PartonLevel:earlyResDec = on
+# PartonLevel:FSR = on             ! final-state radiation
+# #HadronLevel:Hadronize = off     ! no hadronization use
+
+#------------------------------------------------------------------------------
+# Heavy quark masses.
+# Note that this should match with the ones used in the PDF.
+# The masses are listed in the header of the refering PDF file.
+# Documentation: <pyhiadir>/htmldoc/ParticleDataScheme.html
+# Documentation: <pyhiadir>/htmldoc/ParticleData.html
+#------------------------------------------------------------------------------
+# 4:m0 = 1.43
+# 5:m0 = 4.30
+
+#------------------------------------------------------------------------------
+# Particle Decay limits
+# When on, only particles with a decay within a volume limited by 
+# rho = sqrt(x^2 + y^2) < xyMax and |z| < zMax are decayed. 
+# The above xyMax, expressed in mm/c.
+#------------------------------------------------------------------------------
+# ParticleDecays:limitCylinder = on
+# ParticleDecays:xyMax = 600
+# ParticleDecays:zMax = 1000
+
+# EOF

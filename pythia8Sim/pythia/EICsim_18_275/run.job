@@ -1,0 +1,9 @@
+Universe        = vanilla
+Notification    = never
+Rank            = CPU_Speed 
+Priority        = +10
+GetEnv          = True
+Initialdir      = /sphenix/user/jiyj/EIC/EICsim 
+Input           = /dev/null
+GetEnv          = True
+
