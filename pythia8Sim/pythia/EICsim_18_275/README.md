@@ -1,4 +1,4 @@
-#ep collisions with pythia 8
+# ep collisions with pythia 8
 Code Author: Yuanjing Ji
 ## how to run the file
 The default environment is sPHENIX, but it can be submitted to the STAR node at RCF after set up the environment in the shell.
