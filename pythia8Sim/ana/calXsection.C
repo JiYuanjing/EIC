@@ -1,7 +1,7 @@
 #include "myStyle.h"
 
-void drawX(TFile* f ,TPDF* pdf,TFile* fout, double Lumi, double QL1=0.575,double QH1=0.675 ,double QL2=2.075,double QH2=2.175, int mode = 1, double expLumiscale=-1);
-void drawXsection(TFile* f ,TPDF* pdf, TString histname , TFile* fout,double Lumi, double offset, double expLumiscale=-1);
+void drawX(TFile* f ,TPDF* pdf,TFile* fout, double Lumi, double QL1=0.575,double QH1=0.675 ,double QL2=2.075,double QH2=2.175,double s=4*20*100, int mode = 1, double expLumiscale=-1);
+void drawXsection(TFile* f ,TPDF* pdf, TString histname , TFile* fout,double Lumi,double s, double offset, double expLumiscale=-1);
 void drawEventplot(TFile* f, TPDF* pdf, TFile* fout, double expLumiscale);
 void setHist(TH1* h, int color, int linestyle, double linewidth, int markerstyle)
 {
@@ -19,7 +19,8 @@ void calXsection()
   fout->mkdir("Charm");
   fout->mkdir("Inclusive");
 
-  TFile* f = TFile::Open("May06_4.root"); 
+  /* TFile* f = TFile::Open("May06_4.root");  */
+  TFile* f = TFile::Open("May15.root"); 
   f->cd();
   TCanvas* c = new TCanvas("c","c");
   TPDF* pdf = new TPDF("plots.pdf");
@@ -34,6 +35,7 @@ void calXsection()
   double const Lumi = Lumi_mb*0.3894; //convert lumilosity to GeV2
   double const expLumi = 10; // in fb-1 unit
   double expLumiscale = expLumi*1e12/Lumi_mb;  // convert the unit 
+  double s = 4*20*100; // collision energy
 
   gPad->SetLogy(0);
   TH2F* hQx = (TH2F*)f->Get("hQx");
@@ -52,17 +54,17 @@ void calXsection()
   // QL QH refer to the selected Q2 range is (pow(QL,10), pow(QH,10))
   // the center value of the Q2 is (pow(QL,10), pow(QH,10))/2.
   // expLumiscale:scale the error bar to the expected lumilosity, if expLumiscale=-1, then do not scale 
-  drawX(f,pdf,fout,Lumi,  0.575,0.675 ,2.075,2.175, 1, expLumiscale);
-  drawX(f,pdf,fout,Lumi,  0.575,0.675 ,2.075,2.175, 2, expLumiscale);
+  drawX(f,pdf,fout,Lumi,  0.575,0.675 ,2.075,2.175, s, 1, expLumiscale);
+  drawX(f,pdf,fout,Lumi,  0.575,0.675 ,2.075,2.175, s, 2, expLumiscale);
  
-  drawXsection(f, pdf,  "hXsection", fout,  Lumi, 1., expLumiscale);
-  drawXsection(f, pdf,  "hCharmXsection",fout, Lumi,10., expLumiscale);
+  drawXsection(f, pdf,  "hXsection", fout,  Lumi, s, 1., expLumiscale);
+  drawXsection(f, pdf,  "hCharmXsection",fout, Lumi,s, 10., expLumiscale);
   //
   pdf->On();
   pdf->Close();
 }
 //---------------------------------------
-void drawXsection(TFile* f ,TPDF* pdf, TString histname , TFile* fout,double Lumi, double offset, double expLumiscale=-1)
+void drawXsection(TFile* f ,TPDF* pdf, TString histname , TFile* fout,double Lumi, double s,double offset, double expLumiscale)
 {
   f->cd();
   TH2F* hXsection = (TH2F*)f->Get(histname.Data());
@@ -79,9 +81,10 @@ void drawXsection(TFile* f ,TPDF* pdf, TString histname , TFile* fout,double Lum
 
   TH1F* hdraw = (TH1F*)hXsection->ProjectionX("hdraw");
   hdraw->Scale(0);
+  hdraw->GetXaxis()->SetTitle("Log_{10}(Q^{2})");
+
   if (isInclusive)
   {
-    hdraw->GetYaxis()->SetTitle("#sigma_{red}/dxdQ^{2}");
     hdraw->GetYaxis()->SetTitle("#sigma_{red}/dxdQ^{2}-Log_{10}(x)");
     hdraw->GetYaxis()->SetRangeUser(0.1,4.5);
   }
@@ -89,9 +92,9 @@ void drawXsection(TFile* f ,TPDF* pdf, TString histname , TFile* fout,double Lum
   // charm event
   if (isCharm) 
   {  
-    hdraw->GetYaxis()->SetRangeUser(0.01,0.4);
     hdraw->GetYaxis()->SetTitle("#sigma_{red}^{c#bar{c}}/dxdQ^{2}");
     hdraw->GetYaxis()->SetTitle("#sigma_{red}^{c#bar{c}}/dxdQ^{2}-Log_{10}(x)/10");
+    hdraw->GetYaxis()->SetRangeUser(0.01,0.4);
   }
   hdraw->Draw();
   for (int ib=starBin;ib>lastBin;ib--)
@@ -106,8 +109,11 @@ void drawXsection(TFile* f ,TPDF* pdf, TString histname , TFile* fout,double Lum
        double dQ = (pow(10,hsub[ib]->GetBinLowEdge(iq)+Q2width)-pow(10,hsub[ib]->GetBinLowEdge(iq)));
        // double dx = (pow(10,hXsection->GetYaxis()->GetBinLowEdge(ib)+xwidth)-pow(10,hXsection->GetYaxis()->GetBinLowEdge(ib)));
        double dx = (pow(10,xwidth)-1)*pow(10,hXsection->GetYaxis()->GetBinLowEdge(ib));
-       double xQ4 = 1.; // xQ4 is calculated when filling the histogram 
-       double factor = xQ4/dx/dQ/Lumi;
+       double mean_x=0.5*(pow(10,xwidth)+1)*pow(10,hXsection->GetYaxis()->GetBinLowEdge(ib));
+       double mean_Q2=(pow(10,hsub[ib]->GetBinLowEdge(iq)+Q2width)+pow(10,hsub[ib]->GetBinLowEdge(iq)))*0.5;
+       double mean_y=mean_Q2/s/mean_x;
+       double xQ4=mean_Q2*mean_Q2*mean_x;
+       double factor = xQ4/dx/dQ/(2*3.141592/137.06/137.06*(1+(1-mean_y)*(1-mean_y)))/Lumi;
        double error;
        if (expLumiscale>0) 
          error = hsub[ib]->GetBinError(iq)*factor/sqrt(expLumiscale);
@@ -132,6 +138,7 @@ void drawXsection(TFile* f ,TPDF* pdf, TString histname , TFile* fout,double Lum
      hsub[ib]->SetMarkerColor(ib%9+1);
      hsub[ib]->SetLineColor(ib%9+1);
      hsub[ib]->GetXaxis()->SetTitle("Log_{10}(Q^{2})");
+     gerror[ib]->GetXaxis()->SetTitle("Log_{10}(Q^{2})");
      gerror[ib]->SetMarkerColor(ib%9+1);
      gerror[ib]->SetLineColor(ib%9+1);
 
@@ -157,12 +164,10 @@ void drawXsection(TFile* f ,TPDF* pdf, TString histname , TFile* fout,double Lum
   fout->cd();
   if (isCharm)
   {
-    /* fout->mkdir("Charm"); */
     fout->cd("Charm");
   }
   else if (isInclusive)
   {
-    /* fout->mkdir("Inclusive"); */
     fout->cd("Inclusive");
   }
   for (int ib=starBin;ib>lastBin;ib--)
@@ -172,7 +177,7 @@ void drawXsection(TFile* f ,TPDF* pdf, TString histname , TFile* fout,double Lum
   }
 }
 //---------------------------------------
-void drawX(TFile* f ,TPDF* pdf,TFile* fout, double Lumi, double QL1=0.575,double QH1=0.675 ,double QL2=2.075,double QH2=2.175, int mode = 1, double expLumiscale=-1)
+void drawX(TFile* f ,TPDF* pdf,TFile* fout, double Lumi, double QL1,double QH1,double QL2,double QH2, double s, int mode, double expLumiscale)
 {
   f->cd();
   TH1F* hSigma1;
@@ -187,11 +192,11 @@ void drawX(TFile* f ,TPDF* pdf,TFile* fout, double Lumi, double QL1=0.575,double
   {
      double dx = (pow(10,hSigma1->GetBinLowEdge(i)+width)-pow(10,hSigma1->GetBinLowEdge(i)));
      double dQ = pow(10,QH1)-pow(10,QL1);
-     // double dQ = 1;
-     // double L = (hN->GetBinContent(1)/3.18e-3);
-     // double xQ4 = 4.4*4.4*pow(10,hSigma->GetBinCenter(i));
-     double xQ4 = 1.;
-     double factor = xQ4/dx/dQ/Lumi;
+     double mean_x=pow(10,hSigma1->GetBinCenter(i));
+     double mean_Q2=0.5*(pow(10,QL1)+pow(10,QH1));
+     double mean_y=mean_Q2/s/mean_x;
+     double xQ4 = mean_x*mean_Q2*mean_Q2;
+     double factor = xQ4/dx/dQ/(2*3.141592/137.06/137.06*(1+(1-mean_y)*(1-mean_y)))/Lumi;
      if (expLumiscale>0) 
        hSigma1->SetBinError(i,hSigma1->GetBinError(i)*factor/sqrt(expLumiscale));
      else 
@@ -213,9 +218,11 @@ void drawX(TFile* f ,TPDF* pdf,TFile* fout, double Lumi, double QL1=0.575,double
   {
     double dx = (pow(10,hSigma2->GetBinLowEdge(i)+width)-pow(10,hSigma2->GetBinLowEdge(i)));
     double dQ = pow(10,QH2)-pow(10,QL2);
-    // double dQ = 10;
-    double xQ4 = 1.;
-    double factor = xQ4/dx/dQ/Lumi;
+    double mean_x=pow(10,hSigma2->GetBinCenter(i));
+    double mean_Q2=0.5*(pow(10,QL2)+pow(10,QH2));
+    double mean_y=mean_Q2/s/mean_x;
+    double xQ4 = mean_x*mean_Q2*mean_Q2;
+    double factor = xQ4/dx/dQ/(2*3.141592/137.06/137.06*(1+(1-mean_y)*(1-mean_y)))/Lumi;
     if (expLumiscale>0) 
       hSigma2->SetBinError(i,hSigma2->GetBinError(i)*factor/sqrt(expLumiscale));
     else  
