@@ -30,8 +30,8 @@ install root v6  https://root.cern/install/
 See CR_200GeV.zip
 
 How to run:
-make   # compile the code #
-./test.sh
+>make   # compile the code #
+>./test.sh
 
 Output file: test.root
 Pythia setup file: card/EP.cmnd
