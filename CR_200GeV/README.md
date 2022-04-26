@@ -1,6 +1,6 @@
-#Run PYTHIA simulation with root and LHAPDF:
+# Run PYTHIA simulation with root and LHAPDF:
 
-##1, Install software
+## 1, Install software
 install LHAPDF6 https://lhapdf.hepforge.org  
 >(used for changing proton PDF, not necessary for the current study. If skipping this step, then remove lhapdf options in your Makefile when running pythia)
 >Install instruction: https://lhapdf.hepforge.org/install.html
@@ -13,7 +13,7 @@ install root v6  https://root.cern/install/
 >./configure --with-lhapdf6-lib=$LHAPDF/lib
 >make
   
-##2, add Pythia and LHAPDF into libarary path:
+## 2, add Pythia and LHAPDF into libarary path:
  For example for ~/.bashrc:
  >export PYTHIA8="/global/home/users/yuanjing/software/pythia8/pythia8306"
  >export PATH=${PATH}:$PYTHIA8/bin
@@ -26,11 +26,11 @@ install root v6  https://root.cern/install/
  >export LHAPDF_DATA_PATH=$LHAPDF/share/LHAPDF
 
 
-##3, Example of running Pythia:
+## 3, Example of running Pythia:
 See CR_200GeV.zip
 
 How to run:
-make   # compile 
+make   # compile the code #
 ./test.sh
 
 Output file: test.root
@@ -43,7 +43,7 @@ Or in git:
 > https://github.com/JiYuanjing/EIC/tree/master/CR_200GeV
 
 
-#Run PYTHIA8.3 on the RCF
+# Run PYTHIA8.3 on the RCF
 
 We can directly utilize EIC software.
 
